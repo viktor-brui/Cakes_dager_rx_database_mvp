@@ -1,9 +1,7 @@
 package by.viktor.dager_rx_database_mvp.modules.home;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.widget.Toast;
 
 import java.util.List;
@@ -12,7 +10,6 @@ import javax.inject.Inject;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import butterknife.BindAnim;
 import butterknife.BindView;
 import by.viktor.dager_rx_database_mvp.R;
 import by.viktor.dager_rx_database_mvp.base.BaseActivity;
@@ -26,7 +23,7 @@ import by.viktor.dager_rx_database_mvp.utilites.NetworkUtils;
 
 public class MainActivity extends BaseActivity implements MainView {
 
-    @BindView(R.id.cake_list)protected RecyclerView mCakeList;
+    @BindView(R.id.cake_list) protected RecyclerView mCakeList;
     @Inject protected CakePresenter mPresenter;
     private CakeAdapter mCakeAdapter;
 
